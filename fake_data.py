@@ -7,14 +7,14 @@ import numpy as np
 
 import argparse
 
+
 def argparser():
     parser = argparse.ArgumentParser(description='Process some integers.')
     parser.add_argument('n', type=int)
     parser.add_argument('m', type=int)
     return parser.parse_args()
 
-        
-    
+
 if __name__ == '__main__':
     args = argparser()
     n, m = args.n, args.m

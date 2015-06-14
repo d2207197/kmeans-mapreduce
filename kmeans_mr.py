@@ -15,9 +15,8 @@ min_euclidean_distances_index = function([c, v], T.sqrt(T.sqr(c - v).sum(axis=1)
 
 
 def str_to_id_vector(string):
-    _id, vector = string.split('\t',1)
+    _id, vector = string.split('\t', 1)
     return _id, np.fromiter((float(number) for number in vector.split()), dtype=np.float)
-
 
 
 def read_centroids(centroids_file):
@@ -31,6 +30,7 @@ def read_centroids(centroids_file):
     return np.array(centroids)
 
 # print(centroids)
+
 
 def mapper(line):
     global centroids
